@@ -1,0 +1,11 @@
+<!-- templates/taxi/driver_license_update_form.html -->
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Update Driver License Number</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Update License Number</button>
+</form>
+{% endblock %}
