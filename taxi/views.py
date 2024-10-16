@@ -36,7 +36,7 @@ class DriverCreateView(CreateView):
     model = User
     form_class = DriverCreationForm
     template_name = "taxi/driver_form.html"
-    success_url = reverse_lazy("taxi:driver-list")
+    success_url = reverse_lazy("taxi:driver-list/")
 
 
 class DriverDeleteView(DeleteView):
