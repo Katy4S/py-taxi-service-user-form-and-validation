@@ -7,5 +7,6 @@
     {% csrf_token %}
     {{ form.as_p }}
     <button type="submit">Update License Number</button>
+    <a href="{% url 'taxi:driver-list' %}" class="btn btn-secondary">Cancel</a>
 </form>
 {% endblock %}
